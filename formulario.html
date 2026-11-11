@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Anime | Inscripción</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="alternate" type="application/rss+xml" title="RSS de Universo Anime" href="rss.xml">
+</head>
+
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <img src="img/logo.svg" alt="Logo de Universo Anime" width="200" height="200">
+        <p class="nombre-sitio">Universo Anime</p>
+    </header>
+
+    <!-- nav -->
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Ir a la página principal">Inicio</a></li>
+            <li><a href="blog.html" title="Leer el noticiero">Noticias</a></li>
+            <li><a href="tabla.html" title="Ver el ranking de animes">Ranking Top 5</a></li>
+            <li><a href="galeria.html" title="Ver la galería de anime">Galería</a></li>
+            <li><a href="formulario.html" aria-current="page" title="Acceder al formulario de inscripción">Inscripción</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <h1 id="inicio">Registro y Suscripción a Universo Anime</h1>
+
+        <!-- Introducción -->
+        <section id="introduccion">
+
+            <h2>Únete a nuestra comunidad otaku</h2>
+
+            <p>
+                Rellena el formulario para recibir novedades sobre estrenos de anime.
+                Los campos con asterisco (*) son obligatorios.
+            </p>
+
+        </section>
+
+        <!-- Formulario principal -->
+        <section>
+
+            <h2>Formulario de inscripción</h2>
+
+            <form name="form_suscripcion" action="#" method="post" enctype="multipart/form-data">
+
+                <!-- Datos de la cuenta -->
+                <fieldset>
+
+                    <legend>Información de la cuenta</legend>
+
+                    <p>
+                        <label for="nombre">
+                            Nombre de usuario
+                            <abbr title="Obligatorio">*</abbr>:
+                        </label>
+
+                        <input type="text" id="nombre" name="nombre_usuario" required minlength="3" maxlength="20"
+                            placeholder="Ej: Usuario123">
+                    </p>
+
+                    <p>
+                        <label for="email">
+                            Correo electrónico
+                            <abbr title="Obligatorio">*</abbr>:
+                        </label>
+
+                        <input type="email" id="email" name="correo_electronico" required
+                            placeholder="usuario@ejemplo.com">
+                    </p>
+
+                    <p>
+                        <label for="password">
+                            Contraseña
+                            <abbr title="Obligatorio">*</abbr>:
+                        </label>
+
+                        <input type="password" id="password" name="contrasena" required minlength="6"
+                            pattern="[A-Za-z0-9]+" title="Solo se permiten letras y números, sin espacios"
+                            placeholder="Mínimo 6 caracteres">
+                    </p>
+
+                    <p>
+                        <label for="fnacimiento">
+                            Fecha de nacimiento:
+                        </label>
+
+                        <input type="date" id="fnacimiento" name="fecha_nacimiento" max="2026-11-11">
+                    </p>
+
+                </fieldset>
+
+                <!-- Fieldset 2: Preferencias -->
+                <fieldset>
+
+                    <legend>2. Preferencias de animación</legend>
+
+                    <p>
+                        <label for="plataforma">
+                            Plataforma de streaming preferida:
+                        </label>
+
+                        <select id="plataforma" name="plataforma_favorita">
+
+                            <option value="" disabled selected>
+                                Selecciona una opción
+                            </option>
+
+                            <option value="crunchyroll">
+                                Crunchyroll
+                            </option>
+
+                            <option value="netflix">
+                                Netflix
+                            </option>
+
+                            <option value="prime">
+                                Amazon Prime Video
+                            </option>
+
+                            <option value="tv">
+                                Televisión / Emisión tradicional
+                            </option>
+
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="horas">
+                            Horas semanales dedicadas a ver anime:
+                        </label>
+
+                        <input type="number" id="horas" name="horas_semanales" min="1" max="100" step="1" value="10">
+                    </p>
+
+                    <!-- Opciones de perfil -->
+                    <fieldset>
+
+                        <legend>Tipo de espectador (perfil):</legend>
+
+                        <p>
+                            <input type="radio" id="casual" name="tipo_espectador" value="casual" checked>
+
+                            <label for="casual">
+                                Espectador casual (estrenos principales)
+                            </label>
+                        </p>
+
+                        <p>
+                            <input type="radio" id="maraton" name="tipo_espectador" value="maraton">
+
+                            <label for="maraton">
+                                Maratoniano / Fan de sagas largas
+                            </label>
+                        </p>
+
+                        <p>
+                            <input type="radio" id="coleccionista" name="tipo_espectador" value="coleccionista">
+
+                            <label for="coleccionista">
+                                Coleccionista de manga y merchandising
+                            </label>
+                        </p>
+
+                    </fieldset>
+
+                    <!-- Géneros favoritos -->
+                    <fieldset>
+
+                        <legend>
+                            Géneros favoritos (puedes seleccionar varios):
+                        </legend>
+
+                        <p>
+                            <input type="checkbox" id="gen-shonen" name="generos[]" value="shonen" checked>
+
+                            <label for="gen-shonen">
+                                Shonen / Acción
+                            </label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" id="gen-isekai" name="generos[]" value="isekai">
+
+                            <label for="gen-isekai">
+                                Isekai / Fantasía
+                            </label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" id="gen-seinen" name="generos[]" value="seinen" checked>
+
+                            <label for="gen-seinen">
+                                Seinen / Drama oscuro
+                            </label>
+                        </p>
+
+                    </fieldset>
+
+                </fieldset>
+
+                <!-- Fieldset 3: Valoración y envío -->
+                <fieldset>
+
+                    <legend>3. Valoración y envío</legend>
+
+                    <p>
+                        <label for="satisfaccion">
+                            Nivel de exigencia con las adaptaciones
+                            (del 1 al 10):
+                        </label>
+
+                        <input type="range" id="satisfaccion" name="nivel_exigencia" min="1" max="10" step="1"
+                            value="8">
+                    </p>
+
+                    <p>
+                        <label for="avatar">
+                            Sube tu avatar personalizado (opcional):
+                        </label>
+
+                        <input type="file" id="avatar" name="archivo_avatar" accept="image/png, image/jpeg, image/webp">
+                    </p>
+
+                    <p>
+                        <label for="comentarios">
+                            Sugerencias de animes para añadir al catálogo:
+                        </label>
+
+                        <br>
+
+                        <textarea id="comentarios" name="comentarios_usuario" rows="4" cols="40" maxlength="250"
+                            placeholder="Escribe aquí tus sugerencias..."></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="terminos" name="aceptar_terminos" required>
+
+                        <label for="terminos">
+                            Acepto los términos de uso y la política
+                            de privacidad
+                            <abbr title="Obligatorio">*</abbr>
+                        </label>
+                    </p>
+
+                </fieldset>
+
+                <!-- Botones -->
+                <p>
+                    <button type="button" name="verificar_datos">
+                        Verificar datos
+                    </button>
+
+                    <input type="submit" name="enviar_registro" value="Enviar registro">
+
+                    <input type="reset" name="borrar_formulario" value="Borrar formulario">
+                </p>
+
+            </form>
+
+            <p>
+                <small>
+                    Este formulario es una demostración académica.
+                    No se almacenan ni procesan los datos introducidos.
+                </small>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+
+        <address>
+            <p>Sitio web creado por<strong>Óscar Santiago Valdivia</strong></p>
+            <br>Curso: 1º DAM | Módulo: Lenguajes de Marcas
+            <br>Centro: IES Zaidín Vergeles
+            <br><a href="mailto:osanval3101@g.educaand.es"
+                title="Enviar un correo electrónico">osanval3101@g.educaand.es</a>
+        </address>
+
+        <p>© <time datetime="2026">2026</time> Universo Anime. Todos los derechos reservados.</p>
+
+        <p><a href="rss.xml" title="Suscribirse al canal RSS de Universo Anime">Suscribirse al canal RSS</a>
+            <br><a href="#inicio" title="Volver al principio de la página">Volver al inicio</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
