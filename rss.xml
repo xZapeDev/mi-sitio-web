@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Universo Anime</title>
+        <link>https://xzapedev.github.io/mi-sitio-web/</link>
+        <description>Noticias, rankings y contenidos multimedia sobre el mundo del anime.</description>
+        <language>es</language>
+
+        <item>
+            <title>Noticias y artículos del mundo del anime</title>
+            <link>https://xzapedev.github.io/mi-sitio-web/blog.html</link>
+            <guid isPermaLink="true">https://xzapedev.github.io/mi-sitio-web/blog.html</guid>
+            <pubDate>Wed, 11 Nov 2026 10:00:00 +0100</pubDate>
+            <description>Repaso de las novedades de Black Clover, One Piece y otros animes destacados.</description>
+        </item>
+
+        <item>
+            <title>Ranking Top 5 de anime</title>
+            <link>https://xzapedev.github.io/mi-sitio-web/tabla.html</link>
+            <guid isPermaLink="true">https://xzapedev.github.io/mi-sitio-web/tabla.html</guid>
+            <pubDate>Tue, 10 Nov 2026 10:00:00 +0100</pubDate>
+            <description>Comparativa de cinco franquicias de anime según su difusión y popularidad.</description>
+        </item>
+
+        <item>
+            <title>Galería y contenido multimedia</title>
+            <link>https://xzapedev.github.io/mi-sitio-web/galeria.html</link>
+            <guid isPermaLink="true">https://xzapedev.github.io/mi-sitio-web/galeria.html</guid>
+            <pubDate>Mon, 09 Nov 2026 10:00:00 +0100</pubDate>
+            <description>Galería de imágenes, vídeo local, audio y contenidos multimedia relacionados con el anime.</description>
+        </item>
+    </channel>
+</rss>
