@@ -61,18 +61,6 @@ los recursos multimedia se cargan correctamente desde GitHub Pages.
 Las capturas de los validadores oficiales deben añadirse en `img/` cuando se
 realice esa validación. Los nombres previstos son:
 
-### HTML
-
-`img/validacion-html.png`
-
-### CSS
-
-`img/validacion-css.png`
-
-### RSS
-
-`img/validacion-rss.png`
-
 ## Dificultades encontradas
 
 1. **Compatibilidad del vídeo local:** el vídeo original utilizaba un códec
